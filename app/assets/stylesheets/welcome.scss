@@ -1,4 +1,13 @@
-/* Orange color: #e67e22 */
+/* 
+
+COLORS USED:
+------------
+Orange color: #e67e22
+Grey color: #555
+
+ */
+
+
 
 /* ---------------------- */
 /*       BASIC SETUP      */
@@ -10,13 +19,24 @@
 	box-sizing: border-box;
 }
 
-html {
+html,
+body {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-size: 20px;
 	font-weight: 300;
 	text-rendering: optimizelegibility;
+}
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /* ------------------------------ */
@@ -27,6 +47,15 @@ html {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+section {
+	padding: 80px 0;
+}
+
+.box {
+	padding: 1%;
+}
+
 
 /* ------------------------------ */
 /*              HEADER            */
@@ -60,7 +89,7 @@ header {
 .main-nav {
 	float: right;
 	list-style: none;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .main-nav li {
@@ -88,16 +117,103 @@ header {
 /*              HEADINGS          */
 /* ------------------------------ */
 
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
 h1 {
 	margin-top: 0;
 	margin-bottom: 20px;
 	color: #fff;
 	font-size: 240%;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	word-spacing: 4px;
+	letter-spacing: 1px;
+
 }
+
+h2 {
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #e67e22;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+	margin-top: 15px; 
+}
+
+
+/* ------------------------------ */
+/*            PARAGRAPHS          */
+/* ------------------------------ */
+
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+}
+
+/* ----------------------- */
+/*           ICONS         */
+/* ----------------------- */
+
+.icon-big {
+	font-size: 350%;
+	display: block;
+	color: #e67e22;
+	margin-bottom: 10px;
+}
+
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #e67e22;
+	font-size: 120%;
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 10px;
+}
+
+/* ---------------------- */
+/*          LINKS         */
+/* ---------------------- */
+
+a:link,
+a:visited {
+	text-decoration: none;
+		color: #555;
+}
+
+a:hover {
+	color: #e67e22;
+	text-decoration: none;
+	border-bottom: 1px solid #e67e22;
+	padding-bottom: 1px;
+}
+
 
 /* ------------------------------ */
 /*              BUTTONS           */
@@ -144,9 +260,192 @@ h1 {
 	color: #fff;
 }
 
+.btn-app img {
+	height: 50px;
+	width: auto;
+	margin-right: 10px;
+}
+
+/* -------------------------- */
+/*           FEATURES         */
+/* -------------------------- */
+
+.section-features .long-copy {
+	margin-bottom: 30px;
+}
+
+
+/* ---------------------------------- */
+/*           RECIPE-SHOWCASE          */
+/* ---------------------------------- */
+
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.meal-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(1.04);
+}
+
+
+/* ------------------------------------ */
+/*         INSTRUCTIONS-SECTION         */
+/* ------------------------------------ */
+
+
+.section-steps,
+.section-recipes {
+	background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+	text-align: right;
+	padding-right: 3%;
+	margin-top: 30px;
+}
+
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+}
+
+
+.app-screen {
+	width: 90%;
+}
+
+.works-step {
+	margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+	margin-bottom: 80px;
+}
+
+.works-step div {
+	color: #e67e22;
+	border: 2px solid #e67e22;
+	display: inline-block;
+	border-radius: 50%;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	font-size: 150%;
+	margin-right: 25px;
+	}
+
+.works-step p {
+	padding-top: 10px;
+}
+/*.macbook {
+	position: relative;
+	height: 0;
+}
+.macbook img {
+	  box-sizing: border-box;
+    background: url(/assets/macbook-frame.png) center center no-repeat;
+    background-size: contain;
+    padding: 6% 17.5% 10.8% 17%;
+		height: 340px;
+		width: 580px;
+		position: absolute;
+    top: 0;
+    left: 0;
+}
+*/
 
 
 
+/* ---------------------------- */
+/*         ROTATING LOGO        */
+/* ---------------------------- */
+
+.wrapper {
+  margin: 20 auto;
+  height: 80%;
+  position: relative;
+  
+   .hello {
+     position: absolute;
+     left: -28px;
+     font: 3vw/3vw times;
+     top: calc(10% - 0vw);
+     width: 90px;
+     height: 90px;
+     text-align: center;
+     border-radius: 50%;
+    }  
+  
+  svg {
+    animation: rotate 10s linear infinite;
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: calc(10% - 15vw);
+    left: calc(10% - 15vw);
+    overflow: hidden;
+    margin-top: 160px;
 
 
+    .circle-text {
+      font: 50px/50px times;
+      letter-spacing: 10px;
+      width: 90%;
+      fill: white;
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ---------------------------------- */
+/*            RECENT-RECIPES          */
+/* ---------------------------------- */
+
+
+.box img {
+	width: 100%;
+	height: auto;
+/*	margin-bottom: 15px;*/
+
+}
+
+.recipe-ingredient {
+	margin-bottom: 5px;
+}
 

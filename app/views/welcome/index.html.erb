@@ -1,9 +1,30 @@
 <header>
 <nav>
 	<div class="row">
-		<img class="logo" src="/assets/cook-negative.png" alt="logo">
+<!-- 		<img class="logo" src="/assets/cook-negative.png" alt="logo"> -->
+
+<div class="wrapper">
+  <svg xmlns="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="10cm" height="10cm"
+   viewBox="0 0 1000 1000"
+   preserveAspectRatio="xMinYMin"
+>
+<defs>
+<path id="textPath" d="M 250 500 A 250,250 0 1 1 250 500.0001"/>
+</defs>
+<text class="circle-text" x="0" y="0" text-anchor="middle"><textPath xlink:href="#textPath" startOffset="50%" >TEACH ME HOW TO COOK...</textPath></text>
+</svg>
+		<img class="logo hello" src="/assets/cook-negative.png" alt="logo">
+  </div>
+
+
+
 		<ul class="main-nav">
-			<li><a href="#">Why Help Me</a></li>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Instructions</a></li>
 			<li><a href="#">Share Your Recipe</a></li>
 			<li><a href="#">Say Hi</a></li>
 		</ul>
@@ -17,3 +38,179 @@
 
 	</div>
 </header>
+
+
+<section class="section-steps">
+
+	<div class="row">
+		<h2>How it works &mdash; Simple as 1, 2, 3 </h2>
+	</div>
+	<div class="row">
+		<div class="col span-1-of-2 macbook">
+			<img src="/assets/teach-me-how-to-cook-transparent.gif" alt="macbook-frame" class="app-screen">
+		</div>
+		<div class="col span-1-of-2">
+
+			<div class="works-step">
+				<div>1</div>
+				<a href="#">Sign Up with Facebook</a>
+			</div>
+
+				<div class="works-step">
+				<div>2</div>
+				<a href="#">Post Your Recipe</a>
+			</div>
+
+			<div class="works-step">
+				<div>3</div>
+				<p>Make me happy!</p>
+			</div>
+			
+			<a href="#" class="btn-app"><img src="/assets/download-app.svg" alt="AppStore"></a>
+			<a href="#" class="btn-app"><img src="/assets/download-app-android.png" alt="AndroidStore"></a>
+		</div>
+	</div>
+
+</section>
+
+
+
+<section class="section-features">
+
+	<div class="row">
+		<h2>Share your favorite recipes with me!</h2>
+		<p class="long-copy">
+			Add your recipe by following the instructions and check out my friends' most recent recipes posted!
+		</p>
+	</div>
+
+
+		<div class="row">
+
+		<div class="col span-1-of-4 box">
+		<i class="icon ion-ios-nutrition icon-big"></i>
+			<h3>Appetizers</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p>
+		</div>
+
+				<div class="col span-1-of-4 box">
+		<i class="icon ion-pizza icon-big"></i>
+			<h3>Main Entrees</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p>
+		</div>
+
+				<div class="col span-1-of-4 box">
+		<i class="icon ion-icecream icon-big"></i>
+			<h3>Desserts</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p>
+		</div>
+
+				<div class="col span-1-of-4 box">
+		<i class="icon ion-android-bar icon-big"></i>
+			<h3>Coctails / Smoothies</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p>
+		</div>
+
+	</div> <!-- end of row -->
+
+</section>
+
+
+<section class="section-meals">
+	<ul class="meals-showcase clearfix">
+	<% if false %>
+		<% @images.each do |image| %>
+		<li>
+			<figure class="meal-photo">
+			   <%= image_tag "recent-recipes/#{image.split('/').last}" %>
+			</figure>
+		</li>
+			<% end %>
+			<% end %>
+	</ul>
+
+</section>
+
+
+<section class="section-recipes">
+	<div class="row">
+		<h2>Most Recent Recipes Added By Friends</h2>
+	</div>
+	<div class="row">
+
+		<div class="col span-1-of-4 box recipe-box">
+		<figure class="meal-photo">
+		<img src="/assets/recent-recipes/1.jpg" alt="">
+		</figure>
+		<h3>Chinese Egg</h3>
+		<div class="recipe-ingredient">
+			<i class="ion-pizza icon-small"></i>Category: Main Entree
+		</div>
+		<div class="recipe-ingredient">
+			<i class="ion-person icon-small"></i>Created by: John Smith
+		</div>
+			<div class="recipe-ingredient">
+			<i class="ion-calendar icon-small"></i>Added on: 2015-11-26
+		</div>
+		</div>
+
+				<div class="col span-1-of-4 box recipe-box">
+			<figure class="meal-photo">
+		<img src="/assets/recent-recipes/2.jpg" alt="">
+		</figure>
+		<h3>Crusty Pizza</h3>
+		<div class="recipe-ingredient">
+			<i class="ion-pizza icon-small"></i>Category: Main Entree
+		</div>
+		<div class="recipe-ingredient">
+			<i class="ion-person icon-small"></i>Created by: John Smith
+		</div>
+			<div class="recipe-ingredient">
+			<i class="ion-calendar icon-small"></i>Added on: 2015-11-26
+		</div>
+		</div>
+
+		<div class="col span-1-of-4 box recipe-box">
+		<figure class="meal-photo">
+		<img src="/assets/recent-recipes/3.jpg" alt="">
+		</figure>
+		<h3>Healthy Chicken</h3>
+		<div class="recipe-ingredient">
+			<i class="ion-pizza icon-small"></i>Category: Main Entree
+		</div>
+		<div class="recipe-ingredient">
+			<i class="ion-person icon-small"></i>Created by: John Smith
+		</div>
+			<div class="recipe-ingredient">
+			<i class="ion-calendar icon-small"></i>Added on: 2015-11-26
+		</div>
+		</div>
+
+			<div class="col span-1-of-4 box recipe-box">
+			<figure class="meal-photo">
+		<img src="/assets/recent-recipes/4.jpg" alt="">
+		</figure>
+		<h3>Pumpkin soup</h3>
+		<div class="recipe-ingredient">
+			<i class="ion-pizza icon-small"></i>Category: Main Entree
+		</div>
+		<div class="recipe-ingredient">
+			<i class="ion-person icon-small"></i>Created by: John Smith
+		</div>
+			<div class="recipe-ingredient">
+			<i class="ion-calendar icon-small"></i>Added on: 2015-11-26
+		</div>
+		</div>
+
+	</div> <!-- end of row -->
+
+</section>
+
+
+
+
+
+
+
+
+
