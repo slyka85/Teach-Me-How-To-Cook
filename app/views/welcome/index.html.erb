@@ -17,16 +17,16 @@
 </defs>
 <text class="circle-text" x="0" y="0" text-anchor="middle"><textPath xlink:href="#textPath" startOffset="50%" >TEACH ME HOW TO COOK...</textPath></text>
 </svg>
-		<img class="logo hello" src="/assets/cook-negative.png" alt="logo">
+		<img class="logo" src="/assets/cook-negative.png" alt="logo">
   </div>
 
 
 
 		<ul class="main-nav">
-			<li><a href="#">Sign Up</a></li>
-			<li><a href="#">Instructions</a></li>
-			<li><a href="#">Share Your Recipe</a></li>
-			<li><a href="#">Say Hi</a></li>
+			<li><a href="#section-signup" class="page-scroll">Sign Up / Log In</a></li>
+			<li><a href="#section-steps" class="page-scroll">Instructions</a></li>
+			<li><a href="#section-features" class="page-scroll">Share Your Recipe</a></li>
+			<li><a href="#" class="page-scroll">Notify Me</a></li>
 		</ul>
 	</div>
 </nav>
@@ -40,7 +40,7 @@
 </header>
 
 
-<section class="section-steps">
+<section id="section-steps">
 
 	<div class="row">
 		<h2>How it works &mdash; Simple as 1, 2, 3 </h2>
@@ -53,17 +53,17 @@
 
 			<div class="works-step">
 				<div>1</div>
-				<a href="#">Sign Up with Facebook</a>
+				<p><a href="#">Sign Up with Facebook to be able to create a recipe for me</a></p>
 			</div>
 
 				<div class="works-step">
 				<div>2</div>
-				<a href="#">Post Your Recipe</a>
+				<p><a href="#">Share Your Recipe by adding Ingredients, Directions and Images to your recipe post</a></p>
 			</div>
 
 			<div class="works-step">
 				<div>3</div>
-				<p>Make me happy!</p>
+				<p><a href="#">Notify me of a new recipe and I will recreate it and post pictures of the result!</a></p>
 			</div>
 			
 			<a href="#" class="btn-app"><img src="/assets/download-app.svg" alt="AppStore"></a>
@@ -75,7 +75,7 @@
 
 
 
-<section class="section-features">
+<section id="section-features">
 
 	<div class="row">
 		<h2>Share your favorite recipes with me!</h2>
@@ -116,7 +116,7 @@
 </section>
 
 
-<section class="section-meals">
+<section id="section-meals">
 	<ul class="meals-showcase clearfix">
 	<% if false %>
 		<% @images.each do |image| %>
@@ -132,7 +132,7 @@
 </section>
 
 
-<section class="section-recipes">
+<section id="section-recipes">
 	<div class="row">
 		<h2>Most Recent Recipes Added By Friends</h2>
 	</div>
@@ -142,6 +142,16 @@
 		<figure class="meal-photo">
 		<img src="/assets/recent-recipes/1.jpg" alt="">
 		</figure>
+
+				<div class="contenthover">
+					<ul>
+						<li>4 egg yolks</li>
+						<li>3 1/2 tablespoons lemon juice</li>
+						<li>1 pinch ground white pepper</li>
+						<li>1/8 teaspoon Worcestershire sauce</li>
+					</ul>
+				</div>
+
 		<h3>Chinese Egg</h3>
 		<div class="recipe-ingredient">
 			<i class="ion-pizza icon-small"></i>Category: Main Entree
@@ -158,6 +168,9 @@
 			<figure class="meal-photo">
 		<img src="/assets/recent-recipes/2.jpg" alt="">
 		</figure>
+
+		<div class="contenthover">Your content goes here.</div>
+
 		<h3>Crusty Pizza</h3>
 		<div class="recipe-ingredient">
 			<i class="ion-pizza icon-small"></i>Category: Main Entree
@@ -174,6 +187,9 @@
 		<figure class="meal-photo">
 		<img src="/assets/recent-recipes/3.jpg" alt="">
 		</figure>
+
+		<div class="contenthover">Your content goes here.</div>
+
 		<h3>Healthy Chicken</h3>
 		<div class="recipe-ingredient">
 			<i class="ion-pizza icon-small"></i>Category: Main Entree
@@ -190,6 +206,9 @@
 			<figure class="meal-photo">
 		<img src="/assets/recent-recipes/4.jpg" alt="">
 		</figure>
+
+		<div class="contenthover">Your content goes here.</div>
+
 		<h3>Pumpkin soup</h3>
 		<div class="recipe-ingredient">
 			<i class="ion-pizza icon-small"></i>Category: Main Entree
@@ -208,9 +227,59 @@
 
 
 
+<section id="section-advice">
+	<div class="row">
+		<h2>Bla bla bla</h2>
+	</div>
+
+	<div class="row">
+
+		<div class="col span-1-of-3">
+			<blockquote>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. At perferendis, sapiente id repellendus! Animi illo, necessitatibus molestias, nisi facilis, porro quis, quia velit voluptates eos obcaecati natus! Dolorum, cum, quam.
+				<cite><img src="/assets/customer-2.jpg" alt=""> John Smith</cite>
+			</blockquote>
+		</div>
+
+		<div class="col span-1-of-3">
+			<blockquote>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. At perferendis, sapiente id repellendus! Animi illo, necessitatibus molestias, nisi facilis, porro quis, quia velit voluptates eos obcaecati natus! Dolorum, cum, quam.
+				<cite><img src="/assets/customer-2.jpg" alt=""> John Smith</cite>
+			</blockquote>
+		</div>
+
+				<div class="col span-1-of-3">
+			<blockquote>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. At perferendis, sapiente id repellendus! Animi illo, necessitatibus molestias, nisi facilis, porro quis, quia velit voluptates eos obcaecati natus! Dolorum, cum, quam.
+				<cite><img src="/assets/customer-2.jpg" alt=""> John Smith</cite>
+			</blockquote>
+		</div>
+
+	</div>
+
+</section>
+
+<section id="section-signup">
+<div class="row">
+	<h2>Create an account</h2>
+</div>
+
+<div class="row">
+
+		<div class="signup-box">
+		<h3>One-Click Registration</h3>
+
+
+		<div class="row">
+				  <%= link_to 'auth/facebook' do %>
+		   		<a class="btn btn-full" href="#"><i class="ion-social-facebook"></i>Sign Up With Facebook</a>
+		   <% end %>
+		   </div>
+		</div>
+
+</div>
 
 
 
-
-
+   </section>
 
