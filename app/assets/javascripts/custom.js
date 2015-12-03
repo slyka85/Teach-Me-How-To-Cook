@@ -1,4 +1,4 @@
-$(function() {
+ $(document).ready(function() {
     console.log("I'm in ");
 
 $('.meal-photo').contenthover({
@@ -15,8 +15,6 @@ $('.meal-photo').contenthover({
     }
 });
 
-
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -27,6 +25,7 @@ $('.meal-photo').contenthover({
     });
 
 
-
-
 });
+
+
+

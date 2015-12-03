@@ -1,0 +1,74 @@
+<nav id="slide-menu">
+    <div class="row">
+        <div class="wrapper" style="
+            /* margin: auto 0; */
+            left: 60px;
+            top: 25px;">
+
+            <svg width="10cm" height="10cm" viewBox="0 0 1000 1000" preserveAspectRatio="xMinYMin">
+
+                <defs>
+                    <path id="textPath" d="M 250 500 A 250,250 0 1 1 250 500.0001" />
+                </defs>
+
+                <text class="circle-text" x="0" y="0" text-anchor="middle">
+                    <textPath xlink:href="#textPath" startOffset="50%">TEACH ME HOW TO COOK...</textPath>
+                </text>
+            </svg>
+
+            <img class="logo" src="/assets/cook-negative.png" alt="logo">
+            </a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <ul>
+        <a href="/"><li class="timeline"><i class="ion-home icon-small"></i>Home</li></a>
+        <a href="/recipes"><li><i class="ion-pizza icon-small"></i>All Recipes</li></a>
+        <a href="/recipes/new"><li class="timeline"><i class="ion-plus-round icon-small"></i>Add Recipe</li></a>
+        <li class="sep settings"><i class="ion-gear-b icon-small"></i>Settings</li>
+        <li><i class="ion-log-out icon-small"></i>Logout</li>
+    </ul>
+
+</nav>
+
+<div id="content">
+<section id="section-recipes">
+  <div class="menu-trigger"><i class="ion-gear-b icon-big"></i></div>
+  <div class="row">
+    <h2>Recipes Added By Friends</h2>
+  </div>
+<% @recipe.each_slice(4) do |recipes| %>
+
+  <div class="row">
+    <% recipes.each do |recipe| %>
+    <div class="col span-1-of-4 box recipe-box">
+    <figure class="meal-photo">
+  <%= image_tag recipe.image %>
+    </figure>
+
+        <div class="contenthover">
+        <p><%= recipe.description %></p>
+        <p>  <%= link_to 'View Full Recipe', recipe, class: 'btn btn-full' %></h3></p>
+       
+        </div>
+
+    <h3>    <%= link_to recipe.title, recipe %></h3>
+    <div class="recipe-ingredient">
+      <i class="ion-pizza icon-small"></i>Category: Main Entree
+    </div>
+    <div class="recipe-ingredient">
+      <i class="ion-person icon-small"></i>Created by: John Smith
+    </div>
+      <div class="recipe-ingredient">
+      <i class="ion-calendar icon-small"></i>Added on: 2015-11-26
+    </div>
+    </div>
+
+    <% end %>
+
+  </div> <!-- end of row -->
+<% end %>
+</section>
+</div>

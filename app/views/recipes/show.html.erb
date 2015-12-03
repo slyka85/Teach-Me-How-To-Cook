@@ -1,0 +1,14 @@
+<%= image_tag @recipe.image(:medium),  height: '350', width: '400', class: 'recipe_image' %>
+<h2>
+  <%= @recipe.title %>
+</h2>
+<p class="description">
+  <%= @recipe.description %>
+</p>
+<p></p>
+Submitted by
+<br>
+<%= link_to "Edit", edit_recipe_path, class: "btn btn-ghost" %>
+<%= link_to "Delete", @recipe, data: { behavior: 'delete' }, class: "btn btn-ghost" %>
+<%= link_to "Back", recipes_path, class: "btn btn-full" %>
+

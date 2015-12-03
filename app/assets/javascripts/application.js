@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require sweetalert.min
+//= require cocoon
 //= require_tree .
