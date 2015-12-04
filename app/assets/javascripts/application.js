@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require contenthover.min
 //= require turbolinks
 //= require sweetalert.min
 //= require cocoon

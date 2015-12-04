@@ -1,4 +1,4 @@
- $(document).ready(function() {
+ $(function () {
     console.log("I'm in ");
 
 $('.meal-photo').contenthover({
@@ -6,13 +6,13 @@ $('.meal-photo').contenthover({
     overlay_opacity:0.8,
     effect:'slide',
     slide_speed:500,
-    slide_direction:'left',
-    onshow:function(){
-        $('<div>Hover element shown</div>').appendTo($('#d6_log'));
-    },
-    onhide:function(){
-        $('<div>Hover element hidden</div>').appendTo($('#d6_log'));
-    }
+    slide_direction:'left'
+    // onshow:function(){
+    //     $('<div>Hover element shown</div>').appendTo($('#d6_log'));
+    // },
+    // onhide:function(){
+    //     $('<div>Hover element hidden</div>').appendTo($('#d6_log'));
+    // }
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
