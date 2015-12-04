@@ -5,20 +5,19 @@
   <div class="menu-trigger"><i class="ion-gear-b icon-big"></i></div>
   <div class="row">
     <h2>Recipes Added By Friends</h2>
-  </div>
+<!--   </div> -->
 <% @recipes.each_slice(4) do |recipes| %>
 
   <div class="row">
     <% recipes.each do |recipe| %>
     <div class="col span-1-of-4 box recipe-box">
     <figure class="meal-photo">
-  <%= image_tag recipe.image.url(:medium) %>
+  <%= image_tag recipe.image.url(:medium), class: 'image-to-hover' %>
     </figure>
 
         <div class="contenthover">
         <p><%= recipe.description %></p>
-        <p>  <%= link_to 'View Full Recipe', recipe, class: 'btn btn-ghost' %></h3></p>
-       
+        <p>  <%= link_to 'View Full Recipe', recipe, class: 'btn btn-ghost' %></p>
         </div>
 
     <h4>    <%= link_to recipe.title, recipe %></h4>
@@ -29,15 +28,16 @@
         <small style="font-size: 50%;">
         <%= recipe.user.email %>
         </small>
-    </div>
+    </div> <!-- recipe-ingredient -->
+
       <div class="recipe-ingredient">
       <i class="ion-calendar icon-small"></i>
       <small> Added on: </small>
         <small style="font-size: 50%;">
          <%= recipe.created_at.strftime("%B %d, %Y") %>
-         </small>
       </small>
-    </div>
+    </div> <!-- recipe-ingredient -->
+
     </div>
 
     <% end %>
