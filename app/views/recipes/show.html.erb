@@ -51,9 +51,11 @@
         <p class="description">
           <%= @recipe.description %>
         </p>
-        <p>
+        <p><small><em>
           Submitted by
-  
+          <%= @recipe.user.email %>
+          </em>
+       </small>
         </p>
       </div>
     </div>
@@ -87,13 +89,14 @@
     </div>
   </div>
 
+
   <div class="row">
     <div>
       <%= link_to "Back", recipes_path, class: "btn btn-ghost" %>
- 
+      <% if user_signed_in? %>
         <%= link_to "Edit", edit_recipe_path, class: "btn btn-ghost" %>
         <%= link_to "Delete", @recipe, data: { behavior: 'delete' }, class: "btn btn-ghost" %>
-      
+      <% end %>
     </div>
   </div>
   </secton>

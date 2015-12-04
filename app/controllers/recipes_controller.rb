@@ -1,9 +1,10 @@
 class RecipesController < ApplicationController
 	skip_before_action :verify_authenticity_token
+	before_action :authenticate_user!, except: [:index, :show]
 	before_action :find_recipe, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@recipe = Recipe.all.order("created_at DESC")
+		@recipes = Recipe.all.order("created_at DESC")
 	end
 
 	def show

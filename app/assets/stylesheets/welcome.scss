@@ -409,6 +409,17 @@ height: 240px;
 	}
 }
 
+p.description {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+p small {
+	display: block;
+	text-align: right;
+	padding: 10px;
+	color: #1AA68E;
+}
 .row .ingredients-box {
 	width: 40%;
 }
@@ -419,7 +430,7 @@ height: 240px;
 
 .row .description-box {
 	width: 50%;
-	height: 270px;
+	height: auto;
 }
 .row .image-box {
   margin-right: 25px;

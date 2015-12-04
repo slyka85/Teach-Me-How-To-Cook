@@ -39,7 +39,7 @@
   <div class="row">
     <h2>Recipes Added By Friends</h2>
   </div>
-<% @recipe.each_slice(4) do |recipes| %>
+<% @recipes.each_slice(4) do |recipes| %>
 
   <div class="row">
     <% recipes.each do |recipe| %>
@@ -57,10 +57,19 @@
     <h3>    <%= link_to recipe.title, recipe %></h3>
 
     <div class="recipe-ingredient">
-      <i class="ion-person icon-small"></i>Recipe by: John Smith
+      <i class="ion-person icon-small"></i>
+      <small>Recipe by: </small>
+        <small style="font-size: 50%;">
+        <%= recipe.user.email %>
+        </small>
     </div>
       <div class="recipe-ingredient">
-      <i class="ion-calendar icon-small"></i>Added on: 2015-11-26
+      <i class="ion-calendar icon-small"></i>
+      <small> Added on: </small>
+        <small style="font-size: 50%;">
+         <%= recipe.created_at.strftime("%B %d, %Y") %>
+         </small>
+      </small>
     </div>
     </div>
 
