@@ -10,11 +10,11 @@ class RecipesController < ApplicationController
 	end
 
 	def new 
-		@recipe = Recipe.new
+		@recipe = current_user.recipes.build
 	end
 
 	def create
-		@recipe = Recipe.new(recipe_params)
+		@recipe = current_user.recipes.build(recipe_params)
 		if @recipe.save
 			redirect_to @recipe, notice: "Successfully created a recipe!"
 		else
@@ -45,7 +45,7 @@ class RecipesController < ApplicationController
 	private
 
 	def find_recipe
-		@recipe = Recipe.find(params[:id])
+		@recipe = Recipe.friendly.find(params[:id])
 	end
 
 	def recipe_params

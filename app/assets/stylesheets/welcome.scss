@@ -660,6 +660,7 @@ cite img {
     padding: 15px 20px 0 4px;
 }
 
+
 .form-control {
 	display: block;
   width: 92%;
@@ -672,12 +673,15 @@ cite img {
   font-size: 75%;
 }
 
-.form-control label {
-	color: red;
-}
+
 .description-input {
 	height: 75px;
 	width: 96%;
+}
+
+#directions > div.form-inline.clearfix > div > div > label {
+	position: relative;
+	top: -15px; 
 }
 
 .nested-fields label{
@@ -685,6 +689,9 @@ cite img {
 	padding-left: 20px;
 }
 
-.nested-fields input {
+.nested-fields input,
+.nested-fields textarea {
 	width: 250px;
+	border: 1px solid #e3e3e3;
+
 }
