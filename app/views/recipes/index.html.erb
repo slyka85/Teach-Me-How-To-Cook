@@ -1,4 +1,4 @@
-<nav id="slide-menu">
+<nav class="slide-menu">
     <div class="row">
         <div class="wrapper" style="
             /* margin: auto 0; */
@@ -33,8 +33,8 @@
 
 </nav>
 
-<div id="content">
-<section id="section-recipes">
+<div class="content">
+<section class="section-recipes">
   <div class="menu-trigger"><i class="ion-gear-b icon-big"></i></div>
   <div class="row">
     <h2>Recipes Added By Friends</h2>
@@ -45,21 +45,19 @@
     <% recipes.each do |recipe| %>
     <div class="col span-1-of-4 box recipe-box">
     <figure class="meal-photo">
-  <%= image_tag recipe.image %>
+  <%= image_tag recipe.image.url(:medium) %>
     </figure>
 
         <div class="contenthover">
         <p><%= recipe.description %></p>
-        <p>  <%= link_to 'View Full Recipe', recipe, class: 'btn btn-full' %></h3></p>
+        <p>  <%= link_to 'View Full Recipe', recipe, class: 'btn btn-ghost' %></h3></p>
        
         </div>
 
     <h3>    <%= link_to recipe.title, recipe %></h3>
+
     <div class="recipe-ingredient">
-      <i class="ion-pizza icon-small"></i>Category: Main Entree
-    </div>
-    <div class="recipe-ingredient">
-      <i class="ion-person icon-small"></i>Created by: John Smith
+      <i class="ion-person icon-small"></i>Recipe by: John Smith
     </div>
       <div class="recipe-ingredient">
       <i class="ion-calendar icon-small"></i>Added on: 2015-11-26
