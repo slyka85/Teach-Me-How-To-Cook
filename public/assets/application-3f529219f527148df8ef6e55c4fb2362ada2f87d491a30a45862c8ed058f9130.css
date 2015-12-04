@@ -848,7 +848,7 @@ cite img {
   padding: 15px 20px 0 4px;
 }
 
-/* line 664, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
+/* line 665, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
 .form-control {
   display: block;
   width: 92%;
@@ -861,26 +861,29 @@ cite img {
   font-size: 75%;
 }
 
-/* line 676, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
-.form-control label {
-  color: red;
-}
-
-/* line 679, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
+/* line 678, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
 .description-input {
   height: 75px;
   width: 96%;
 }
 
-/* line 684, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
+/* line 683, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
+#directions > div.form-inline.clearfix > div > div > label {
+  position: relative;
+  top: -15px;
+}
+
+/* line 688, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
 .nested-fields label {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-/* line 689, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
-.nested-fields input {
+/* line 693, /Users/anechka/Documents/CODING/!PROJECTS/TeachMeHowToCook/app/assets/stylesheets/welcome.scss */
+.nested-fields input,
+.nested-fields textarea {
   width: 250px;
+  border: 1px solid #e3e3e3;
 }
 @charset "UTF-8";
 /*
