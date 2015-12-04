@@ -32,3 +32,6 @@ gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.6'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'friendly_id', '~> 5.1'
+gem 'aws-sdk', '~> 2.2', '>= 2.2.3'
+gem 'fog', '~> 1.36'
+gem "figaro"
