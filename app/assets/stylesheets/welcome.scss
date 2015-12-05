@@ -345,7 +345,8 @@ a:hover {
 	left: 43%;
 }
 
-#contactForm textarea {
+#contactForm textarea,
+.form-inputs{
 	margin-bottom: 35px;
 }
 
@@ -662,7 +663,7 @@ cite img {
 /*            SECTION-SIGNUP         */
 /* --------------------------------- */
 
-#section-signup {
+.section-signup {
 	background-color: #f4f4f4;
 }
 
