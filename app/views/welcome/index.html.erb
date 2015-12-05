@@ -59,7 +59,7 @@
 <section id="section-steps">
 
 	<div class="row">
-		<h2>How it works &mdash; Simple as 1, 2, 3 </h2>
+		<h2>How it works &mdash; Simple. </h2>
 	</div>
 	<div class="row">
 		<div class="col span-1-of-2 macbook steps-pic">
@@ -110,7 +110,6 @@
 			<figure class="meal-photo">
 			<%= image_tag 'appetizer.jpg' %>
 			</figure>
-<!-- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p> -->
 		</div>
 
 				<div class="col span-1-of-4 box">
@@ -119,7 +118,6 @@
 			<figure class="meal-photo">
 			<%= image_tag 'entree.jpg' %>
 			</figure>
-<!-- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p> -->
 		</div>
 
 				<div class="col span-1-of-4 box">
@@ -128,7 +126,6 @@
 			<figure class="meal-photo">
 			<%= image_tag 'dessert.jpg' %>
 			</figure>
-<!-- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p> -->
 		</div>
 
 				<div class="col span-1-of-4 box">
@@ -137,10 +134,13 @@
 			<figure class="meal-photo">
 			<%= image_tag 'smoothie.jpg' %>
 			</figure>
-<!-- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit, quia libero pariatur ea aut totam quaerat natus nisi nihil consectetur unde dolorum! Minima velit ipsum necessitatibus similique. Quaerat, iusto.</p> -->
 		</div>
 
 	</div> <!-- end of row -->
+
+				<div class="row">
+						<a class="btn btn-ghost signup-btn page-scroll" href="/recipes/new">Add Recipe</a>
+		   </div>
 
 </section>
 
@@ -197,7 +197,41 @@
 <section class="section-form">
 	
 	<div class="row">
-		
+		<h2>Beep Beep. Send me a message :)</h2>
+	</div>
+
+	<div class="row">
+		            <form name="sentMessage" id="contactForm" novalidate action="//formspree.io/gannasachakov@gmail.com" method="POST">
+                        <div class="row">
+                         
+                                <div class="form-group">
+                                      
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." name="name">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                           
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." name="_replyto">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Talk to me... *" id="message" required data-validation-required-message="Please enter a message." name="message" style="height:300px"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            
+                            <input type="hidden" name="_next" value="https://teach-me-how-to-cook.herokuapp.com/" />
+                            <input type="hidden" name="_subject" value="Recipe contact" />
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <div class="clearfix"></div>
+                       
+                                <div id="success"></div>
+                          <center>
+                        <button type="submit" class="btn btn-full" value="Send">Send Message</button>
+                        </center>
+                          
+
+                        </div>
+                    </form>
 
 	</div>
 
