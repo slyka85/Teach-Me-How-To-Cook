@@ -71,6 +71,7 @@ header {
 	background-position: center;
 	background-attachment: fixed;
 	height: 100vh;
+/*	position: relative;*/
 }
 
 .hero-text-box {
@@ -405,9 +406,10 @@ a:hover {
 }
 
 .meal-photo {
-/*	width: 100%;*/
-  width: 270px;
-  height: 240px;
+	width: 100%;
+	height: auto;
+/*  width: 270px;*/
+/*  height: 240px;*/
 	margin: 0;
 	overflow: hidden;
 	background-color: #000;
@@ -418,7 +420,7 @@ a:hover {
 	opacity: 0.8;
   width: 270px;
   height: 240px;
-	transform: scale(1);
+	transform: scale(1.05);
 	transition: transform 0.5s, opacity 0.5s;
 	border-radius: 3px;
 }
@@ -509,7 +511,7 @@ max-height: 100%;
 
 .steps-box:last-child {
 	padding-left: 3%;
-	margin-top: 70px;
+	margin-top: 25px;
 }
 
 
