@@ -759,3 +759,35 @@ span.hint {
 	font-size: 75%;
 	color: #888;
 }
+
+
+
+/* -------------------- */
+/*         SEARCH       */
+/* -------------------- */
+
+.search {
+    float: right;
+    position: relative;
+    top: -40px;
+    right: 25px;
+    padding: 2px;
+    margin: 10px;
+    width: 200px;
+  	height: 50px;
+    padding-left: 45px;
+}
+input#search {
+	    padding: 4px 4px 4px 30px;
+	    font-size: 75%;
+			border-radius: 5px;
+			border: none;
+}
+
+.search .search-icon {
+	  position: absolute;
+    position: absolute;
+    left: 24%;
+    padding: 3px;
+    color: grey;
+}
