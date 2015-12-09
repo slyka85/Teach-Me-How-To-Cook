@@ -770,22 +770,27 @@ span.hint {
     float: right;
     position: relative;
     top: -40px;
-    right: -20px;
-    margin: 10px;
-    width: 200px;
-  	height: 50px;
+    right: 10px;
+    width: 250px;
+    height: 40px;
     overflow: hidden;
     vertical-align: middle;
 }
 
 input#search {
-	    padding: 10px;
-	    font-size: 75%;
+	    width: 200px;
+      height: 40px;
+	    padding-left: 10px;
+	    font-size: 65%;
 			border-radius: 5px;
 			border: none;
+      outline: none;
+      float: left;
+
 }
 
 button.search-icon {
+	opacity: 0;
   background-color: #FF6B6B;
   color: white;
   border-top-right-radius: 5px;
@@ -794,6 +799,16 @@ button.search-icon {
   height: 40px;
   width: 40px;
   font-size: 85%;
-/*  transition: all .55s ease;*/
-  margin-left: -30px;
+  transition: all .6s ease;
 }
+
+.search:hover button.search-icon,
+.search:active button.search-icon,
+.search:focus button.search-icon {
+   opacity: 1;
+   margin-left: -40px;
+   outline: none;
+}
+/*.search:hover button.search-icon:hover{
+  background: red;
+}*/
