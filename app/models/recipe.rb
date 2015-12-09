@@ -29,4 +29,15 @@ class Recipe < ActiveRecord::Base
 
 
 	 validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+
+
+   def self.search(search)
+      if search
+        where(["title LIKE ?", "%#{search}%"])
+      else
+        all
+      end
+   end
+
+
 end

@@ -4,7 +4,9 @@ class RecipesController < ApplicationController
 	before_action :find_recipe, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@recipes = Recipe.all.order("created_at DESC")
+		# @recipes = Recipe.all.order("created_at DESC")
+		# @recipes = Recipe.where(["name LIKE ?", "%#{params[:search]}%"])
+		@recipes = Recipe.search(params[:search])
 	end
 
 	def show

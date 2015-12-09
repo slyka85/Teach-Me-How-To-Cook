@@ -2,11 +2,24 @@
 
 <div class="content">
 <section class="section-recipes">
+
 <div class="search">
-<!-- <span class="search-icon"><i class="ion-ios-search-strong"></i></span> -->
-  <input type="search" id="search" placeholder="Search Recipe...">
-  <button class="search-icon"><i class="ion-ios-search-strong"></i></button>
+<%= form_tag recipes_path, :method => 'get' do %>
+    <%= text_field_tag :search, params[:search], placeholder:'Seach Recipe...' %>
+    <%= button_tag '<i class="ion-ios-search-strong"></i>'.html_safe, class:"search-icon" %>
+<% end %>
 </div>
+
+<!-- 
+<div class="search">
+<form action="/recipes" accept-charset="UTF-8" method="get">
+<input name="utf8" type="hidden" value="✓">
+  <input type="text" id="search" placeholder="Search Recipe...">
+  <button class="search-icon"><i class="ion-ios-search-strong"></i></button>
+</form>
+
+</div> -->
+
   <div class="menu-trigger"><i class="ion-gear-b icon-big"></i></div>
   <div class="row">
     <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recipes Added By Friends</h2>
