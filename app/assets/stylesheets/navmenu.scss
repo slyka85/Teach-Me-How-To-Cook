@@ -4,7 +4,7 @@
 /* ---------------------------------- */
 
 .top-nav-menu {
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 nav.slide-menu {
@@ -113,5 +113,5 @@ div.content {
 
 	}
 
-body.menu-active div.content { left: 236px; border-radius: 2px 0 0 7px; }
+body.menu-active div.content { left: 236px; border-radius: 2px 0 0 7px; width: 83%; }
 body.menu-active div.content .menu-trigger { left: 247px; }
