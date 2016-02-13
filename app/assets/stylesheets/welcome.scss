@@ -787,7 +787,8 @@ cite img {
 }
 
 .form-group {
-	width: 50%;
+/*	width: 50%;*/
+max-width: 550px;
 	margin: 0 auto;
 	color: #555;
 }
