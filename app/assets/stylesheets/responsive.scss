@@ -4,7 +4,7 @@
 
 .hero-text-box {
     width: 100%;
-    padding: 0 2%;
+    padding: 0 2% !important;
     position: absolute;
 }
 
@@ -29,7 +29,7 @@ section {
 }
 
 .hero-text-box {
-	left: 64% !important;
+	    padding: 0 2% !important;
 }
 
 
@@ -83,7 +83,7 @@ font-size: 50%;
 }
 
 h1 {
-	font-size: 150% !important;
+	font-size: 135% !important;
 }
 
 h2 {
@@ -96,6 +96,7 @@ font-size: 80% !important;
 
 .hero-text-box {
 	width: 100% !important;
+	position: absolute;
 	left: 0 !important;
 	padding: 0 10% !important;
 }

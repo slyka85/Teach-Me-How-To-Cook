@@ -14,10 +14,12 @@
 //= require jquery_ujs
 //= require jquery.contenthover
 //= require jquery.turbolinks
+//= require jquery.waypoints.min
 //= require sweetalert.min
 //= require respond.min
 //= require html5shiv.min
 //= require selectivizr.min
 //= require typed.min
 //= require cocoon
+
 //= require_tree .

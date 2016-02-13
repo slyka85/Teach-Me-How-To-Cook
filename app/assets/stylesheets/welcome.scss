@@ -77,8 +77,9 @@ header {
 }
 
 .hero-text-box {
+	padding-left: 2%;
 	position: absolute;
-	width: 1140px;
+	width: 100%;
 	top: 50%;
 /*	left: 50%;*/
 /*	-webkit-transform: translate(-50%, -50%);
@@ -152,6 +153,35 @@ header {
 .main-nav li a:active {
 	border-bottom: 2px solid #FF6B6B;
 	}
+
+
+
+	/*  Sticky Navigation  */
+
+	nav.sticky-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 80px;
+/*		background-color: rgba(254, 254, 254, 0.68);*/
+	}
+
+
+	.sticky-nav .main-nav li a:link,
+	.sticky-nav .main-nav li a:visited {
+		color: #555;
+	}
+
+/*.sticky-nav .logo { display: none; }*/
+/*.sticky-nav .logo-black { display: block; }*/
+.sticky-nav .row { margin: 6px auto; }
+/*.sticky-nav text.circle-text.circle-text-black { fill: black; }*/
+/*.sticky-nav text.circle-text.circle-text { fill: black; }*/
+/*.sticky-nav .wrapper-black { transform: scale(0.7); position: absolute; top: -11px; }*/
+
+
+
 
 /* ------------------------------ */
 /*              HEADINGS          */
@@ -580,12 +610,14 @@ max-height: 100%;
 /*         ROTATING LOGO        */
 /* ---------------------------- */
 
-.wrapper {
+.wrapper,
+.wrapper-black {
 /*  margin: 20 auto;
   height: 80%;*/
   position: relative;
   
-   .logo {
+   .logo,
+   .logo-black {
 		border-radius: 50%;
 		border: 1px solid white;
 		padding: 10px;
@@ -596,6 +628,10 @@ max-height: 100%;
     width: 70px;
     height: 70px;
     }  
+
+    .logo-black {
+    		border: 1px solid black;
+    }
   
   svg {
     -webkit-animation: rotate 10s linear infinite;
@@ -609,7 +645,8 @@ max-height: 100%;
     margin-top: 0px;
 
 
-    .circle-text {
+    .circle-text,
+    .circle-text-black {
       font: 50px/50px times;
       letter-spacing: 8px;
       width: 90%;
